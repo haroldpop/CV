@@ -6,9 +6,9 @@ import os
 
 from homography import Homography
 
-VIDEO_FILE = "/home/pop/Documents/School/CV/code/labs/lab4/Lab01-robot-video.mp4"
-frame_dir = "/home/pop/Documents/School/CV/code/labs/lab4/frame"
-maskframe_dir = "/home/pop/Documents/School/CV/code/labs/lab4/maskframe"
+VIDEO_FILE = "Lab01-robot-video.mp4"
+frame_dir = "frame"
+maskframe_dir = "maskframe"
 
 
 def getFloorPixel(frame, c1, c2):
