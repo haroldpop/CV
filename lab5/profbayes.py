@@ -27,7 +27,7 @@ def reg(matFrameDisplay, homo):
 
 def getFloorHist(aProbFloor, aProbNotFloor, test_size):
     # stack original picture
-    pathOriginal = "/home/pop/Documents/School/CV/code/labs/lab4/frame"
+    pathOriginal = "frame"
     frames = os.listdir(pathOriginal)
     listFrame = []
     for frame in frames:
@@ -36,7 +36,7 @@ def getFloorHist(aProbFloor, aProbNotFloor, test_size):
         listFrame.append(im)
 
     # stack mask picture 
-    pathMask = "/home/pop/Documents/School/CV/code/labs/lab4/maskframe"
+    pathMask = "maskframe"
     maskframes = os.listdir(pathMask)
     listMaskFrame = []
     for maskframe in maskframes:
