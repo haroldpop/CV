@@ -158,8 +158,8 @@ def main(VIDEO_FILE, homo_file, binsH, binsS, binsV, test_size):
     return 0
 
 test_size = 0.2
-VIDEO_FILE = "/home/pop/Documents/School/CV/code/labs/lab4/Lab01-robot-video.mp4"
-homo_file = "/home/pop/Documents/School/CV/code/labs/lab4/file/robot-homography.yml"
+VIDEO_FILE = "/"
+homo_file = "/"
 binsH, binsS, binsV = 64, 16, 16
 resolution = (3600, 2700)
 main(VIDEO_FILE, homo_file, binsH, binsS, binsV, test_size)
