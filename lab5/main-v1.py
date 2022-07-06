@@ -222,12 +222,6 @@ def main(method):
     lines2 = (matEss @ pts1_hom).reshape(-1, 3)
     lines1_cv = cv2.computeCorrespondEpilines(pts2.reshape(-1, 1, 2),  2, matEss).reshape(-1, 3)
     lines2_cv = cv2.computeCorrespondEpilines(pts1.reshape(-1, 1, 2), 1, matEss).reshape(-1, 3)
-
-    lines1 = lines1 @ matCam
-    lines2 = lines2 @ matCam
-    lines1_cv = lines1_cv @ matCam
-    lines2_cv = lines2_cv @ matCam
-
     
     colors = createColors(pts1.shape[0])
     print("cv", lines1_cv)
